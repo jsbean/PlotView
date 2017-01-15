@@ -7,57 +7,58 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForAnalyzing = "YES"
             buildForTesting = "YES"
             buildForRunning = "YES"
             buildForProfiling = "YES"
-            buildForArchiving = "YES">
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AC9DE884239EEF1339713071"
+               BuildableName = "PlotView.framework"
                BlueprintName = "PlotView iOS"
-               ReferencedContainer = "container:PlotView.xcodeproj"
-               BuildableName = "PlotView iOS.framework">
+               ReferencedContainer = "container:PlotView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
-            buildForAnalyzing = "NO"
             buildForTesting = "YES"
             buildForRunning = "NO"
             buildForProfiling = "NO"
-            buildForArchiving = "NO">
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A84C61FBF19B60BCF47FC2C3'
-               BlueprintName = 'PlotView iOS Tests'
-               ReferencedContainer = 'container:PlotView.xcodeproj'
-               BuildableName = 'PlotView iOS Tests.xctest'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A84C61FBF19B60BCF47FC2C3"
+               BuildableName = "PlotView iOS Tests.xctest"
+               BlueprintName = "PlotView iOS Tests"
+               ReferencedContainer = "container:PlotView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug"
       codeCoverageEnabled = "YES">
-      <AdditionalOptions>
-      </AdditionalOptions>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A84C61FBF19B60BCF47FC2C3'
-               BlueprintName = 'PlotView iOS Tests'
-               ReferencedContainer = 'container:PlotView.xcodeproj'
-               BuildableName = 'PlotView iOS Tests.xctest'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A84C61FBF19B60BCF47FC2C3"
+               BuildableName = "PlotView iOS Tests.xctest"
+               BlueprintName = "PlotView iOS Tests"
+               ReferencedContainer = "container:PlotView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -65,17 +66,25 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      buildConfiguration = "Debug"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AC9DE884239EEF1339713071"
+            BuildableName = "PlotView.framework"
+            BlueprintName = "PlotView iOS"
+            ReferencedContainer = "container:PlotView.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      debugDocumentVersioning = "YES"
-      buildConfiguration = "Release"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      debugDocumentVersioning = "YES">
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
