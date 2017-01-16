@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		075303EC1E2AACBB00457EAD /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303EB1E2AACBB00457EAD /* PlotView.swift */; };
 		075303ED1E2AACBB00457EAD /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303EB1E2AACBB00457EAD /* PlotView.swift */; };
+		076D04671E2D2A740023ED96 /* LinesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04661E2D2A740023ED96 /* LinesPosition.swift */; };
+		076D04681E2D2A740023ED96 /* LinesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04661E2D2A740023ED96 /* LinesPosition.swift */; };
+		076D046A1E2D2A860023ED96 /* LinesSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04691E2D2A860023ED96 /* LinesSegment.swift */; };
+		076D046B1E2D2A860023ED96 /* LinesSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04691E2D2A860023ED96 /* LinesSegment.swift */; };
+		076D046D1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */; };
+		076D046E1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */; };
 		183B1FC6E07D88078E1B5964 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F09E3A19178DB6A25B18F3D /* Cocoa.framework */; };
 		31AD766E26BAD2089AB4B4B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C429326D2D0F99BD66B45A93 /* Foundation.framework */; };
 		6EB43A15F8EE126CA04F85A7 /* PlotView.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AEA48973FDD6E008CDD3E1 /* PlotView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +42,9 @@
 
 /* Begin PBXFileReference section */
 		075303EB1E2AACBB00457EAD /* PlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotView.swift; path = PlotView/PlotView.swift; sourceTree = "<group>"; };
+		076D04661E2D2A740023ED96 /* LinesPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesPosition.swift; path = PlotView/LinesPosition.swift; sourceTree = "<group>"; };
+		076D04691E2D2A860023ED96 /* LinesSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegment.swift; path = PlotView/LinesSegment.swift; sourceTree = "<group>"; };
+		076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegmentCollection.swift; path = PlotView/LinesSegmentCollection.swift; sourceTree = "<group>"; };
 		75FDDDF740121444B903B193 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotView/Info.plist; sourceTree = "<group>"; };
 		79265B239BF5DE015E1C808F /* PlotView macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlotView macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B14A0DB8A540DB5C86296AB /* PlotView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlotView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +168,9 @@
 			children = (
 				1A6D3C9F9C038B8ADFF443A2 /* Supporting Files */,
 				075303EB1E2AACBB00457EAD /* PlotView.swift */,
+				076D04661E2D2A740023ED96 /* LinesPosition.swift */,
+				076D04691E2D2A860023ED96 /* LinesSegment.swift */,
+				076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */,
 			);
 			name = PlotView;
 			sourceTree = "<group>";
@@ -311,7 +323,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 1;
 		};
 		CFBD58750B12324669F4DB1A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -331,7 +342,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -340,7 +350,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076D04681E2D2A740023ED96 /* LinesPosition.swift in Sources */,
+				076D046E1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */,
 				075303ED1E2AACBB00457EAD /* PlotView.swift in Sources */,
+				076D046B1E2D2A860023ED96 /* LinesSegment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +368,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076D04671E2D2A740023ED96 /* LinesPosition.swift in Sources */,
+				076D046D1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */,
 				075303EC1E2AACBB00457EAD /* PlotView.swift in Sources */,
+				076D046A1E2D2A860023ED96 /* LinesSegment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
