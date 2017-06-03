@@ -36,7 +36,7 @@ public protocol PlotRenderer {
 ///
 /// Each of the graphical layers has its own renderer which can be define explicitly for any
 /// type of musical information.
-public protocol PlotView: Renderer {
+public protocol PlotView: Renderable {
     
     // MARK: - Associated Types
     
