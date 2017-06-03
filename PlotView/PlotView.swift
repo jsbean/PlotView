@@ -9,7 +9,7 @@
 import PlotModel
 import GraphicsTools
 
-public protocol PlotRenderer {
+public protocol PlotRenderer: Renderer {
     
     associatedtype InformationRenderer
     associatedtype StructureRenderer
