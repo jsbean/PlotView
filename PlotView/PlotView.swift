@@ -83,14 +83,6 @@ public protocol PlotView: Renderer {
     /// Transforms an abstract horizontal coordinate into a concrete horizontal position.
     var concreteHorizontalPosition: (HorizontalCoordinate) -> Position { get }
     
-    // MARK: Graphics
-    
-    /// Concrete layer containing the structural elements of a `PlotView`
-    var structure: GraphicalContext { get }
-    
-    /// Concrete layer containing the informational elements of a `PlotView`.
-    var information: GraphicalContext { get }
-    
     // MARK: Renderers
     
     func render(in context: GraphicalContext, with renderer: Renderer)
