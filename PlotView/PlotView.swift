@@ -9,6 +9,15 @@
 import PlotModel
 import GraphicsTools
 
+public protocol PlotRenderer {
+    
+    associatedtype InformationRenderer
+    associatedtype StructureRenderer
+    
+    var informationRenderer: InformationRenderer { get }
+    var structureRenderer: StructureRenderer { get }
+}
+
 /// Graphical representation of information.
 ///
 /// The horizontal and vertical positioning of information if stratified into two steps:
@@ -27,7 +36,7 @@ import GraphicsTools
 ///
 /// Each of the graphical layers has its own renderer which can be define explicitly for any
 /// type of musical information.
-public protocol PlotView {
+public protocol PlotView: Renderer {
     
     // MARK: - Associated Types
     
@@ -53,15 +62,8 @@ public protocol PlotView {
     
     // MARK: Graphics
     
-    /// Stores an abstract model of lines and axes, tailored for the specific `PlotView`
-    /// implementation.
-    ///
-    /// Will likely render lines and the ax(is|es).
-    associatedtype StructureRenderer: Renderer
-    
-    /// Stores an abstract model of information, tailorded for the specific `PlotView`
-    /// implementation.
-    associatedtype InformationRenderer: Renderer
+    /// Renderer tailor made for this `PlotView`-conforming type.
+    associatedtype Renderer: PlotRenderer
     
     /// The type of graphical context onto which this `PlotView` will be rendered.
     associatedtype GraphicalContext
@@ -91,9 +93,5 @@ public protocol PlotView {
     
     // MARK: Renderers
     
-    /// Renders the information onto the `information` `Layer`, given configuration.
-    var informationRenderer: InformationRenderer { get }
-    
-    /// Renders the structure onto the `structure` `Layer`, given configuration.
-    var structureRenderer: StructureRenderer { get }
+    func render(in context: GraphicalContext, with renderer: Renderer)
 }
