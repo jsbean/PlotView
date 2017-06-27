@@ -31,9 +31,11 @@ public protocol PlotView: Renderer {
     
     /// The information that will be rendered onto a `PlotView`.
     ///
-    /// - TODO: Swift 4: associatedtype Model: PlotModel where 
-    ///     PlotModel.VerticalAxis.Coordinate == VerticalCoordinate,
-    ///     PlotModel.HorizontalAxis.Coordinate == HorizontalCoordinate
+    /// - TODO: Swift 4: 
+    ///     associatedtype Model: PlotModel where
+    ///         PlotModel.VerticalAxis.Coordinate == VerticalCoordinate,
+    ///         PlotModel.HorizontalAxis.Coordinate == HorizontalCoordinate
+    ///
     associatedtype Model: PlotModel
     
     // MARK: Abstract positioning of entities
@@ -41,9 +43,15 @@ public protocol PlotView: Renderer {
     /// Type that describes the abstract vertical coordinate system of a `PlotView`.
     ///
     /// For example, `Staff` implements this as `StaffSlot`.
+    ///
+    /// - TODO: In Swift 4, add recursive constraint: Model.VerticalAxis.Coordinate
+    ///
     associatedtype VerticalCoordinate
     
     /// Type that describes the abstract horizontal coordinate system of a `PlotView`.
+    ///
+    /// - TODO: In Swift 4, add recursive constraint: Model.HorizontalAxis.Coordinate
+    ///
     associatedtype HorizontalCoordinate
     
     // MARK: Graphics
