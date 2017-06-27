@@ -48,9 +48,6 @@ public protocol PlotView: Renderer {
     
     // MARK: Graphics
     
-    /// Renderer tailor made for this `PlotView`-conforming type.
-    associatedtype Renderer
-    
     /// The type of graphical context onto which this `PlotView` will be rendered.
     associatedtype GraphicalContext
     
