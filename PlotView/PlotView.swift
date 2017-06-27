@@ -30,6 +30,10 @@ public protocol PlotView: Renderer {
     // MARK: Model
     
     /// The information that will be rendered onto a `PlotView`.
+    ///
+    /// - TODO: Swift 4: associatedtype Model: PlotModel where 
+    ///     PlotModel.VerticalAxis.Coordinate == VerticalCoordinate,
+    ///     PlotModel.HorizontalAxis.Coordinate == HorizontalCoordinate
     associatedtype Model: PlotModel
     
     // MARK: Abstract positioning of entities
