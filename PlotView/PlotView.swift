@@ -23,7 +23,7 @@ import GraphicsTools
 ///
 /// Each of the graphical layers has its own renderer which can be define explicitly for any
 /// type of musical information.
-public protocol PlotView: Renderer {
+public protocol PlotView: Renderable {
     
     // MARK: - Associated Types
     
@@ -54,11 +54,6 @@ public protocol PlotView: Renderer {
     ///
     associatedtype HorizontalCoordinate
     
-    // MARK: Graphics
-    
-    /// The type of graphical context onto which this `PlotView` will be rendered.
-    associatedtype GraphicalContext
-    
     // MARK: - Instance Properties
     
     // MARK: Model
@@ -75,5 +70,5 @@ public protocol PlotView: Renderer {
     var concreteHorizontalPosition: (HorizontalCoordinate) -> Double { get }
     
     /// Render contents in the given `context` with the given `configuration`.
-    func render(in context: GraphicalContext, with configuration: Configuration)
+    func render(with configuration: Configuration) -> ConfiguredPlotView
 }
