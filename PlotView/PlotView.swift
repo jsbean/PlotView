@@ -9,15 +9,6 @@
 import PlotModel
 import GraphicsTools
 
-public protocol PlotRenderer: Renderer {
-    
-    associatedtype InformationRenderer
-    associatedtype StructureRenderer
-    
-    var informationRenderer: InformationRenderer { get }
-    var structureRenderer: StructureRenderer { get }
-}
-
 /// Graphical representation of information.
 ///
 /// The horizontal and vertical positioning of information if stratified into two steps:
@@ -29,10 +20,6 @@ public protocol PlotRenderer: Renderer {
 ///
 /// - `Position`:
 /// Concrete value for positioning a given musical element within a `PlotView`.
-///
-/// The graphical information is stratified into two layers: `structure` and `information`.
-/// The `structure` layer may contain graphical elements like lines and axes. The `information`
-/// layer will contain graphical representations of the actualy musical information.
 ///
 /// Each of the graphical layers has its own renderer which can be define explicitly for any
 /// type of musical information.
@@ -63,7 +50,7 @@ public protocol PlotView: Renderer {
     // MARK: Graphics
     
     /// Renderer tailor made for this `PlotView`-conforming type.
-    associatedtype Renderer: PlotRenderer
+    associatedtype Renderer
     
     /// The type of graphical context onto which this `PlotView` will be rendered.
     associatedtype GraphicalContext
