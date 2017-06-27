@@ -16,14 +16,11 @@ import GraphicsTools
 /// Abstract model of a coordinate system
 /// that may be implemented in any number of ways. For example, a `Staff` may model the
 /// abstract position of `SpelledPitch` values on a given staff-line or in a given staff-space.
-/// A string tablature system may have pre-defined positions which are irregularly placed.
-///
-/// - `Position`:
-/// Concrete value for positioning a given musical element within a `PlotView`.
+/// A string tablature system may have pre-defined positions which are irregularly 
 ///
 /// Each of the graphical layers has its own renderer which can be define explicitly for any
 /// type of musical information.
-public protocol PlotView: Renderable {
+public protocol PlotView: CompositeRenderable {
     
     // MARK: - Associated Types
     
@@ -37,6 +34,9 @@ public protocol PlotView: Renderable {
     ///         PlotModel.HorizontalAxis.Coordinate == HorizontalCoordinate
     ///
     associatedtype Model: PlotModel
+
+    /// Plot-specific Graphical configuration.
+    associatedtype Configuration
     
     // MARK: Abstract positioning of entities
     
@@ -60,6 +60,7 @@ public protocol PlotView: Renderable {
     
     /// The information that will be rendered onto a `PlotView`.
     var model: Model { get }
+    var configuration: Configuration { get }
     
     // MARK: Positioning of entities
     
@@ -68,7 +69,4 @@ public protocol PlotView: Renderable {
     
     /// Transforms an abstract horizontal coordinate into a concrete horizontal position.
     var concreteHorizontalPosition: (HorizontalCoordinate) -> Double { get }
-    
-    /// Render contents in the given `context` with the given `configuration`.
-    func render(with configuration: Configuration) -> ConfiguredPlotView
 }

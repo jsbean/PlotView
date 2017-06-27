@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		075303EC1E2AACBB00457EAD /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303EB1E2AACBB00457EAD /* PlotView.swift */; };
 		075303ED1E2AACBB00457EAD /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303EB1E2AACBB00457EAD /* PlotView.swift */; };
-		076715671F029C180073AA6F /* ConfiguredPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076715661F029C180073AA6F /* ConfiguredPlotView.swift */; };
-		076715681F029C180073AA6F /* ConfiguredPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076715661F029C180073AA6F /* ConfiguredPlotView.swift */; };
 		076D04671E2D2A740023ED96 /* LinesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04661E2D2A740023ED96 /* LinesPosition.swift */; };
 		076D04681E2D2A740023ED96 /* LinesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04661E2D2A740023ED96 /* LinesPosition.swift */; };
 		076D046A1E2D2A860023ED96 /* LinesSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04691E2D2A860023ED96 /* LinesSegment.swift */; };
 		076D046B1E2D2A860023ED96 /* LinesSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04691E2D2A860023ED96 /* LinesSegment.swift */; };
 		076D046D1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */; };
 		076D046E1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */; };
+		07E2B48C1F02A472007D3F02 /* PlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */; };
+		07E2B48D1F02A472007D3F02 /* PlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */; };
 		07E8F21C1F02615000493E47 /* VerticalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8F21B1F02615000493E47 /* VerticalPlotView.swift */; };
 		07E8F21D1F02615000493E47 /* VerticalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8F21B1F02615000493E47 /* VerticalPlotView.swift */; };
 		07E8F21F1F02621300493E47 /* HorizontalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8F21E1F02621300493E47 /* HorizontalPlotView.swift */; };
@@ -48,10 +48,10 @@
 
 /* Begin PBXFileReference section */
 		075303EB1E2AACBB00457EAD /* PlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotView.swift; path = PlotView/PlotView.swift; sourceTree = "<group>"; };
-		076715661F029C180073AA6F /* ConfiguredPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfiguredPlotView.swift; path = PlotView/ConfiguredPlotView.swift; sourceTree = "<group>"; };
 		076D04661E2D2A740023ED96 /* LinesPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesPosition.swift; path = PlotView/LinesPosition.swift; sourceTree = "<group>"; };
 		076D04691E2D2A860023ED96 /* LinesSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegment.swift; path = PlotView/LinesSegment.swift; sourceTree = "<group>"; };
 		076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegmentCollection.swift; path = PlotView/LinesSegmentCollection.swift; sourceTree = "<group>"; };
+		07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewTests.swift; path = PlotViewTests/PlotViewTests.swift; sourceTree = "<group>"; };
 		07E8F21B1F02615000493E47 /* VerticalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotView.swift; path = PlotView/VerticalPlotView.swift; sourceTree = "<group>"; };
 		07E8F21E1F02621300493E47 /* HorizontalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalPlotView.swift; path = PlotView/HorizontalPlotView.swift; sourceTree = "<group>"; };
 		75FDDDF740121444B903B193 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = PlotView/Info.plist; sourceTree = "<group>"; };
@@ -133,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				8967A3B26F9922545E3B28E4 /* Supporting Files */,
+				07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */,
 			);
 			name = PlotViewTests;
 			sourceTree = "<group>";
@@ -177,10 +178,9 @@
 			children = (
 				1A6D3C9F9C038B8ADFF443A2 /* Supporting Files */,
 				075303EB1E2AACBB00457EAD /* PlotView.swift */,
-				076D04661E2D2A740023ED96 /* LinesPosition.swift */,
 				07E8F21B1F02615000493E47 /* VerticalPlotView.swift */,
 				07E8F21E1F02621300493E47 /* HorizontalPlotView.swift */,
-				076715661F029C180073AA6F /* ConfiguredPlotView.swift */,
+				076D04661E2D2A740023ED96 /* LinesPosition.swift */,
 				076D04691E2D2A860023ED96 /* LinesSegment.swift */,
 				076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */,
 			);
@@ -288,8 +288,14 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					135279BE01D6C00F1E02730B = {
+						LastSwiftMigration = 0830;
+					};
 					15434245B77CBA74345365BA = {
 						LastSwiftMigration = 0820;
+					};
+					A84C61FBF19B60BCF47FC2C3 = {
+						LastSwiftMigration = 0830;
 					};
 					AC9DE884239EEF1339713071 = {
 						LastSwiftMigration = 0820;
@@ -325,7 +331,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ArithmeticTools.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Collections.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Color.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/GraphicsTools.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PathTools.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PlotModel.framework",
@@ -344,7 +349,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/Mac/ArithmeticTools.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/Collections.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Color.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/GraphicsTools.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/PathTools.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/PlotModel.framework",
@@ -363,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E8F21D1F02615000493E47 /* VerticalPlotView.swift in Sources */,
-				076715681F029C180073AA6F /* ConfiguredPlotView.swift in Sources */,
 				07E8F2201F02621300493E47 /* HorizontalPlotView.swift in Sources */,
 				076D04681E2D2A740023ED96 /* LinesPosition.swift in Sources */,
 				076D046E1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */,
@@ -376,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E2B48D1F02A472007D3F02 /* PlotViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +388,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E8F21C1F02615000493E47 /* VerticalPlotView.swift in Sources */,
-				076715671F029C180073AA6F /* ConfiguredPlotView.swift in Sources */,
 				07E8F21F1F02621300493E47 /* HorizontalPlotView.swift in Sources */,
 				076D04671E2D2A740023ED96 /* LinesPosition.swift in Sources */,
 				076D046D1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */,
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E2B48C1F02A472007D3F02 /* PlotViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -433,6 +438,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -618,6 +625,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -629,6 +637,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -669,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -680,6 +690,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -687,6 +698,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -698,6 +710,8 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
