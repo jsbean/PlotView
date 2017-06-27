@@ -1,2 +1,2 @@
 github "dn-m/GraphicsTools" "refine-renderable-protocols"
-github "dn-m/PlotModel"
+github "dn-m/PlotModel" "refine-protocols"

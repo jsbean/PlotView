@@ -10,63 +10,6 @@ import PlotModel
 import GraphicsTools
 
 /// Graphical representation of information.
-///
-/// The horizontal and vertical positioning of information if stratified into two steps:
-/// - `(Vertical | Horizontal) Coordinate` systems:
-/// Abstract model of a coordinate system
-/// that may be implemented in any number of ways. For example, a `Staff` may model the
-/// abstract position of `SpelledPitch` values on a given staff-line or in a given staff-space.
-/// A string tablature system may have pre-defined positions which are irregularly 
-///
-/// Each of the graphical layers has its own renderer which can be define explicitly for any
-/// type of musical information.
-public protocol PlotView: CompositeRenderable {
-    
-    // MARK: - Associated Types
-    
-    // MARK: Model
-    
-    /// The information that will be rendered onto a `PlotView`.
-    ///
-    /// - TODO: Swift 4: 
-    ///     associatedtype Model: PlotModel where
-    ///         PlotModel.VerticalAxis.Coordinate == VerticalCoordinate,
-    ///         PlotModel.HorizontalAxis.Coordinate == HorizontalCoordinate
-    ///
-    associatedtype Model: PlotModel
-
-    /// Plot-specific Graphical configuration.
-    associatedtype Configuration
-    
-    // MARK: Abstract positioning of entities
-    
-    /// Type that describes the abstract vertical coordinate system of a `PlotView`.
-    ///
-    /// For example, `Staff` implements this as `StaffSlot`.
-    ///
-    /// - TODO: In Swift 4, add recursive constraint: Model.VerticalAxis.Coordinate
-    ///
-    associatedtype VerticalCoordinate
-    
-    /// Type that describes the abstract horizontal coordinate system of a `PlotView`.
-    ///
-    /// - TODO: In Swift 4, add recursive constraint: Model.HorizontalAxis.Coordinate
-    ///
-    associatedtype HorizontalCoordinate
-    
-    // MARK: - Instance Properties
-    
-    // MARK: Model
-    
-    /// The information that will be rendered onto a `PlotView`.
-    var model: Model { get }
-    var configuration: Configuration { get }
-    
-    // MARK: Positioning of entities
-    
-    /// Transforms an abstract vertical coordinate into a concrete vertical position.
-    var concreteVerticalPosition: (VerticalCoordinate) -> Double { get }
-    
-    /// Transforms an abstract horizontal coordinate into a concrete horizontal position.
-    var concreteHorizontalPosition: (HorizontalCoordinate) -> Double { get }
+public protocol PlotView: Renderable {
+    // TODO: Stuff
 }

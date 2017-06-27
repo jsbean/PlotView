@@ -1,7 +1,7 @@
 github "dn-m/Collections" "2.1"
 github "jsbean/SWXMLHash" "3.0.5"
 github "dn-m/ArithmeticTools" "0.13.5"
-github "dn-m/PlotModel" "0.2.9"
+github "dn-m/PlotModel" "31584f1663741b50f0f39d9308239077edf130e8"
 github "dn-m/GeometryTools" "0.6.5"
 github "dn-m/PathTools" "0.9"
 github "dn-m/GraphicsTools" "ead9f1b9c2be135376f2b602ba6e26ae9311207d"
