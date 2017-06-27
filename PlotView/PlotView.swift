@@ -42,11 +42,6 @@ public protocol PlotView: Renderer {
     /// Type that describes the abstract horizontal coordinate system of a `PlotView`.
     associatedtype HorizontalCoordinate
     
-    // MARK: Concrete positioning of entities
-    
-    /// Native numerical type of `GraphicalContext`. Probably a floating-point type.
-    associatedtype Position
-    
     // MARK: Graphics
     
     /// Renderer tailor made for this `PlotView`-conforming type.
@@ -65,10 +60,10 @@ public protocol PlotView: Renderer {
     // MARK: Positioning of entities
     
     /// Transforms an abstract vertical coordinate into a concrete vertical position.
-    var concreteVerticalPosition: (VerticalCoordinate) -> Position { get }
+    var concreteVerticalPosition: (VerticalCoordinate) -> Double { get }
     
     /// Transforms an abstract horizontal coordinate into a concrete horizontal position.
-    var concreteHorizontalPosition: (HorizontalCoordinate) -> Position { get }
+    var concreteHorizontalPosition: (HorizontalCoordinate) -> Double { get }
     
     /// Render contents in the given `context` with the given `configuration`.
     func render(in context: GraphicalContext, with configuration: Configuration)
