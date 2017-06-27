@@ -10,5 +10,5 @@ import PlotModel
 
 public protocol HorizontalPlotView: PlotView {
     associatedtype Model: HorizontalPlotModel
-    associatedtype VerticalCoordinate = Double
+    func concreteHorizontalPosition(for coordinate: Model.HorizontalAxis.Coordinate) -> Double
 }

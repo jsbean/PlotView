@@ -10,5 +10,5 @@ import PlotModel
 
 public protocol VerticalPlotView: PlotView {
     associatedtype Model: VerticalPlotModel
-    var concreteVerticalPosition: (Model.VerticalAxis.Coordinate) -> Double { get }
+    func concreteVerticalPosition(for coordinate: Model.VerticalAxis.Coordinate) -> Double
 }
