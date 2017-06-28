@@ -25,7 +25,7 @@ public struct VerticalAxisPosition {
 }
 
 public protocol VerticalAxisView: AxisView {
-    associatedtype Position = VerticalAxisPosition
+    typealias Position = VerticalAxisPosition
 }
 
 public struct HorizontalAxisPosition {
@@ -35,5 +35,5 @@ public struct HorizontalAxisPosition {
 }
 
 public protocol HorizontalAxisView: AxisView {
-    associatedtype Position = HorizontalAxisPosition
+    typealias Position = HorizontalAxisPosition
 }
