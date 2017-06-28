@@ -13,6 +13,8 @@
 		075303ED1E2AACBB00457EAD /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075303EB1E2AACBB00457EAD /* PlotView.swift */; };
 		076200A31F03E24F00D62726 /* AxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076200A21F03E24F00D62726 /* AxisView.swift */; };
 		076200A41F03E24F00D62726 /* AxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076200A21F03E24F00D62726 /* AxisView.swift */; };
+		076200A61F03E4D600D62726 /* AxisViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076200A51F03E4D600D62726 /* AxisViewTests.swift */; };
+		076200A71F03E4D600D62726 /* AxisViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076200A51F03E4D600D62726 /* AxisViewTests.swift */; };
 		076D04671E2D2A740023ED96 /* LinesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04661E2D2A740023ED96 /* LinesPosition.swift */; };
 		076D04681E2D2A740023ED96 /* LinesPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04661E2D2A740023ED96 /* LinesPosition.swift */; };
 		076D046A1E2D2A860023ED96 /* LinesSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04691E2D2A860023ED96 /* LinesSegment.swift */; };
@@ -54,6 +56,7 @@
 		073A6F121F02B74A00AEFA5D /* PlotViewCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewCollection.swift; path = PlotView/PlotViewCollection.swift; sourceTree = "<group>"; };
 		075303EB1E2AACBB00457EAD /* PlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotView.swift; path = PlotView/PlotView.swift; sourceTree = "<group>"; };
 		076200A21F03E24F00D62726 /* AxisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisView.swift; path = PlotView/AxisView.swift; sourceTree = "<group>"; };
+		076200A51F03E4D600D62726 /* AxisViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AxisViewTests.swift; path = PlotViewTests/AxisViewTests.swift; sourceTree = "<group>"; };
 		076D04661E2D2A740023ED96 /* LinesPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesPosition.swift; path = PlotView/LinesPosition.swift; sourceTree = "<group>"; };
 		076D04691E2D2A860023ED96 /* LinesSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegment.swift; path = PlotView/LinesSegment.swift; sourceTree = "<group>"; };
 		076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegmentCollection.swift; path = PlotView/LinesSegmentCollection.swift; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 			children = (
 				8967A3B26F9922545E3B28E4 /* Supporting Files */,
 				07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */,
+				076200A51F03E4D600D62726 /* AxisViewTests.swift */,
 			);
 			name = PlotViewTests;
 			sourceTree = "<group>";
@@ -390,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E2B48D1F02A472007D3F02 /* PlotViewTests.swift in Sources */,
+				076200A71F03E4D600D62726 /* AxisViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E2B48C1F02A472007D3F02 /* PlotViewTests.swift in Sources */,
+				076200A61F03E4D600D62726 /* AxisViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
