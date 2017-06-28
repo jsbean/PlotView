@@ -1,2 +1,2 @@
-github "dn-m/GraphicsTools" "refine-renderable-protocols"
-github "dn-m/PlotModel" "refine-protocols"
+github "dn-m/GraphicsTools" >= 0.6
+github "dn-m/PlotModel" >= 0.3
