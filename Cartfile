@@ -1,2 +1,2 @@
-github "dn-m/GraphicsTools"
-github "dn-m/PlotModel"
+github "dn-m/GraphicsTools" >= 0.6
+github "dn-m/PlotModel" >= 0.3
