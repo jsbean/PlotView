@@ -19,9 +19,9 @@ public protocol AxisView: Renderable {
 }
 
 public struct VerticalAxisPosition {
-    let x: Double
-    let plotTop: Double
-    let plotBottom: Double
+    public let x: Double
+    public let plotTop: Double
+    public let plotBottom: Double
 }
 
 public protocol VerticalAxisView: AxisView {
@@ -31,9 +31,9 @@ public protocol VerticalAxisView: AxisView {
 }
 
 public struct HorizontalAxisPosition {
-    let y: Double
-    let plotLeft: Double
-    let plotRight: Double
+    public let y: Double
+    public let plotLeft: Double
+    public let plotRight: Double
 }
 
 public protocol HorizontalAxisView: AxisView {
