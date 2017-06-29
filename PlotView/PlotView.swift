@@ -10,6 +10,6 @@ import PlotModel
 import GraphicsTools
 
 /// Graphical representation of information.
-public protocol PlotView: Renderable {
+public protocol PlotView: CompositeRenderable {
     // TODO: Stuff
 }
