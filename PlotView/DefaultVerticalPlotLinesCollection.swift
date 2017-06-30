@@ -1,5 +1,5 @@
 //
-//  VerticalPlotLinesCollection.swift
+//  DefaultVerticalPlotLinesCollection.swift
 //  PlotView
 //
 //  Created by James Bean on 6/30/17.
@@ -10,7 +10,7 @@ import GeometryTools
 import PathTools
 import GraphicsTools
 
-public struct VerticalPlotLinesCollection: Renderable {
+public struct DefaultVerticalPlotLinesCollection: Renderable {
     
     public struct Configuration {
         public let height: Double
@@ -22,19 +22,19 @@ public struct VerticalPlotLinesCollection: Renderable {
         return .leaf(boundaryLines)
     }
     
-    public let staffLines: LinesSegmentCollection
+    public let lineSegments: LinesSegmentCollection
     public let configuration: Configuration
     
-    public init(staffLines: LinesSegmentCollection, configuration: Configuration) {
-        self.staffLines = staffLines
+    public init(lineSegments: LinesSegmentCollection, configuration: Configuration) {
+        self.lineSegments = lineSegments
         self.configuration = configuration
     }
     
     private var boundaryLines: StyledPath {
         
         let path = Path(
-            staffLines.flatMap { segment in
-                return (0..<1).map { lineNumber in
+            lineSegments.flatMap { segment in
+                return (0..<2).map { lineNumber in
                     let altitude = Double(lineNumber) * configuration.height
                     let left = segment.start
                     let right = segment.stop

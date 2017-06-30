@@ -21,8 +21,8 @@
 		076D046B1E2D2A860023ED96 /* LinesSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D04691E2D2A860023ED96 /* LinesSegment.swift */; };
 		076D046D1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */; };
 		076D046E1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */; };
-		07731E9F1F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731E9E1F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift */; };
-		07731EA01F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731E9E1F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift */; };
+		07731E9F1F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731E9E1F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift */; };
+		07731EA01F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731E9E1F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift */; };
 		07731EA11F06651000BDDCD6 /* PlotView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74107D73AE69F0DB0B8DF42 /* PlotView.framework */; };
 		07731EA21F06651500BDDCD6 /* PlotView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B14A0DB8A540DB5C86296AB /* PlotView.framework */; };
 		07731EA51F0665B000BDDCD6 /* DefaultVerticalAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EA41F0665B000BDDCD6 /* DefaultVerticalAxisView.swift */; };
@@ -37,6 +37,12 @@
 		07731EB21F0667EB00BDDCD6 /* HorizontalAxisPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB01F0667EB00BDDCD6 /* HorizontalAxisPosition.swift */; };
 		07731EB41F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB31F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift */; };
 		07731EB51F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB31F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift */; };
+		07731EB71F066B8300BDDCD6 /* DefaultVerticalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB61F066B8300BDDCD6 /* DefaultVerticalPlotView.swift */; };
+		07731EB81F066B8300BDDCD6 /* DefaultVerticalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB61F066B8300BDDCD6 /* DefaultVerticalPlotView.swift */; };
+		07731EBA1F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB91F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift */; };
+		07731EBB1F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EB91F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift */; };
+		07731EBD1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EBC1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift */; };
+		07731EBE1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EBC1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift */; };
 		07E2B48C1F02A472007D3F02 /* PlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */; };
 		07E2B48D1F02A472007D3F02 /* PlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */; };
 		07E8F21C1F02615000493E47 /* VerticalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8F21B1F02615000493E47 /* VerticalPlotView.swift */; };
@@ -76,13 +82,16 @@
 		076D04661E2D2A740023ED96 /* LinesPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesPosition.swift; path = PlotView/LinesPosition.swift; sourceTree = "<group>"; };
 		076D04691E2D2A860023ED96 /* LinesSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegment.swift; path = PlotView/LinesSegment.swift; sourceTree = "<group>"; };
 		076D046C1E2D2A950023ED96 /* LinesSegmentCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LinesSegmentCollection.swift; path = PlotView/LinesSegmentCollection.swift; sourceTree = "<group>"; };
-		07731E9E1F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotLinesCollection.swift; path = PlotView/VerticalPlotLinesCollection.swift; sourceTree = "<group>"; };
+		07731E9E1F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotLinesCollection.swift; path = PlotView/DefaultVerticalPlotLinesCollection.swift; sourceTree = "<group>"; };
 		07731EA41F0665B000BDDCD6 /* DefaultVerticalAxisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalAxisView.swift; path = PlotView/DefaultVerticalAxisView.swift; sourceTree = "<group>"; };
 		07731EA71F0665EC00BDDCD6 /* VerticalAxisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalAxisView.swift; path = PlotView/VerticalAxisView.swift; sourceTree = "<group>"; };
 		07731EAA1F06660500BDDCD6 /* HorizontalAxisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalAxisView.swift; path = PlotView/HorizontalAxisView.swift; sourceTree = "<group>"; };
 		07731EAD1F0667D100BDDCD6 /* VerticalAxisPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalAxisPosition.swift; path = PlotView/VerticalAxisPosition.swift; sourceTree = "<group>"; };
 		07731EB01F0667EB00BDDCD6 /* HorizontalAxisPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalAxisPosition.swift; path = PlotView/HorizontalAxisPosition.swift; sourceTree = "<group>"; };
 		07731EB31F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalAxisViewTests.swift; path = PlotViewTests/DefaultVerticalAxisViewTests.swift; sourceTree = "<group>"; };
+		07731EB61F066B8300BDDCD6 /* DefaultVerticalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotView.swift; path = PlotView/DefaultVerticalPlotView.swift; sourceTree = "<group>"; };
+		07731EB91F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotViewTests.swift; path = PlotViewTests/DefaultVerticalPlotViewTests.swift; sourceTree = "<group>"; };
+		07731EBC1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotView.Builder.swift; path = PlotView/DefaultVerticalPlotView.Builder.swift; sourceTree = "<group>"; };
 		07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewTests.swift; path = PlotViewTests/PlotViewTests.swift; sourceTree = "<group>"; };
 		07E8F21B1F02615000493E47 /* VerticalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotView.swift; path = PlotView/VerticalPlotView.swift; sourceTree = "<group>"; };
 		07E8F21E1F02621300493E47 /* HorizontalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalPlotView.swift; path = PlotView/HorizontalPlotView.swift; sourceTree = "<group>"; };
@@ -180,6 +189,7 @@
 				07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */,
 				076200A51F03E4D600D62726 /* AxisViewTests.swift */,
 				07731EB31F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift */,
+				07731EB91F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift */,
 			);
 			name = PlotViewTests;
 			sourceTree = "<group>";
@@ -230,7 +240,9 @@
 				07731EA71F0665EC00BDDCD6 /* VerticalAxisView.swift */,
 				07731EAD1F0667D100BDDCD6 /* VerticalAxisPosition.swift */,
 				07731EA41F0665B000BDDCD6 /* DefaultVerticalAxisView.swift */,
-				07731E9E1F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift */,
+				07731EB61F066B8300BDDCD6 /* DefaultVerticalPlotView.swift */,
+				07731EBC1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift */,
+				07731E9E1F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift */,
 				073A6F121F02B74A00AEFA5D /* PlotViewCollection.swift */,
 				07E8F21B1F02615000493E47 /* VerticalPlotView.swift */,
 				07E8F21E1F02621300493E47 /* HorizontalPlotView.swift */,
@@ -423,15 +435,17 @@
 				07E8F21D1F02615000493E47 /* VerticalPlotView.swift in Sources */,
 				07731EAF1F0667D100BDDCD6 /* VerticalAxisPosition.swift in Sources */,
 				076200A41F03E24F00D62726 /* AxisView.swift in Sources */,
-				07731EA01F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift in Sources */,
+				07731EA01F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift in Sources */,
 				07E8F2201F02621300493E47 /* HorizontalPlotView.swift in Sources */,
 				076D04681E2D2A740023ED96 /* LinesPosition.swift in Sources */,
 				07731EA61F0665B000BDDCD6 /* DefaultVerticalAxisView.swift in Sources */,
 				07731EB21F0667EB00BDDCD6 /* HorizontalAxisPosition.swift in Sources */,
 				076D046E1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */,
+				07731EB81F066B8300BDDCD6 /* DefaultVerticalPlotView.swift in Sources */,
 				073A6F141F02B74A00AEFA5D /* PlotViewCollection.swift in Sources */,
 				075303ED1E2AACBB00457EAD /* PlotView.swift in Sources */,
 				07731EAC1F06660500BDDCD6 /* HorizontalAxisView.swift in Sources */,
+				07731EBE1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift in Sources */,
 				07731EA91F0665EC00BDDCD6 /* VerticalAxisView.swift in Sources */,
 				076D046B1E2D2A860023ED96 /* LinesSegment.swift in Sources */,
 			);
@@ -442,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E2B48D1F02A472007D3F02 /* PlotViewTests.swift in Sources */,
+				07731EBB1F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift in Sources */,
 				07731EB51F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift in Sources */,
 				076200A71F03E4D600D62726 /* AxisViewTests.swift in Sources */,
 			);
@@ -454,15 +469,17 @@
 				07E8F21C1F02615000493E47 /* VerticalPlotView.swift in Sources */,
 				07731EAE1F0667D100BDDCD6 /* VerticalAxisPosition.swift in Sources */,
 				076200A31F03E24F00D62726 /* AxisView.swift in Sources */,
-				07731E9F1F065E6300BDDCD6 /* VerticalPlotLinesCollection.swift in Sources */,
+				07731E9F1F065E6300BDDCD6 /* DefaultVerticalPlotLinesCollection.swift in Sources */,
 				07E8F21F1F02621300493E47 /* HorizontalPlotView.swift in Sources */,
 				076D04671E2D2A740023ED96 /* LinesPosition.swift in Sources */,
 				07731EA51F0665B000BDDCD6 /* DefaultVerticalAxisView.swift in Sources */,
 				07731EB11F0667EB00BDDCD6 /* HorizontalAxisPosition.swift in Sources */,
 				076D046D1E2D2A950023ED96 /* LinesSegmentCollection.swift in Sources */,
+				07731EB71F066B8300BDDCD6 /* DefaultVerticalPlotView.swift in Sources */,
 				073A6F131F02B74A00AEFA5D /* PlotViewCollection.swift in Sources */,
 				075303EC1E2AACBB00457EAD /* PlotView.swift in Sources */,
 				07731EAB1F06660500BDDCD6 /* HorizontalAxisView.swift in Sources */,
+				07731EBD1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift in Sources */,
 				07731EA81F0665EC00BDDCD6 /* VerticalAxisView.swift in Sources */,
 				076D046A1E2D2A860023ED96 /* LinesSegment.swift in Sources */,
 			);
@@ -473,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07E2B48C1F02A472007D3F02 /* PlotViewTests.swift in Sources */,
+				07731EBA1F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift in Sources */,
 				07731EB41F066A7A00BDDCD6 /* DefaultVerticalAxisViewTests.swift in Sources */,
 				076200A61F03E4D600D62726 /* AxisViewTests.swift in Sources */,
 			);
