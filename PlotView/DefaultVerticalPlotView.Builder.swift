@@ -49,6 +49,24 @@ extension DefaultVerticalPlotView {
             self.configuration = configuration
         }
         
+        public init(model: DefaultVerticalPlotModel, configuration: DefaultPlotConfiguration) {
+            
+            self.configuration = configuration
+            
+            startLines(at: 0)
+            for (position, points) in model {
+                startLines(at: position)
+                for point in points {
+                    let y = axis.coordinate(point.value) * configuration.height
+                    let pointView = DefaultVerticalPointView(position: Point(x: position, y: y))
+                    self.points.append(pointView)
+                }
+            }
+            
+            // FIXME: Should be called externally
+            stopLines(at: model.points.keys.max()! + 100)
+        }
+        
         /// Starts staff lines at the given position.
         public func startLines(at x: Double) {
             boundaryLines.startLines(at: x)
@@ -60,7 +78,7 @@ extension DefaultVerticalPlotView {
         }
         
         public func build() -> DefaultVerticalPlotView {
-            return DefaultVerticalPlotView(axis: axisView, lines: lines, points: [])
+            return DefaultVerticalPlotView(axis: axisView, lines: lines, points: points)
         }
     }
 }
