@@ -44,13 +44,7 @@ class PlotViewTests: XCTestCase {
     struct PViewConfiguration { }
     
     struct PView: PlotView {
-        
-        /// `StyledPath.Composite`-representation of `Renderable`-conforming type.
-        var rendered: StyledPath.Composite {
-            fatalError()
-        }
-
-        let renderables: [Renderable]
+        let components: [Renderable]
         let model: PModel
         let configuration: PViewConfiguration
         let concreteHorizontalPosition: (Double) -> Double = { x in x }
