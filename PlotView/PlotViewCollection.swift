@@ -18,9 +18,9 @@ public struct PlotViewCollection {
     }
 }
 
-extension PlotViewCollection: AnyCollectionWrapping {
+extension PlotViewCollection: CollectionWrapping {
     
-    public var collection: AnyCollection<PlotView> {
-        return AnyCollection(plots)
+    public var base: [PlotView] {
+        return plots
     }
 }
