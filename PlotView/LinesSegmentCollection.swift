@@ -28,7 +28,7 @@ public struct LinesSegmentCollection {
     public init() { }
 }
 
-extension LinesSegmentCollection: AnyCollectionWrapping {
+extension LinesSegmentCollection: CollectionWrapping {
     
     /// All `LinesSegments` contained herein.
     public var linesSegments: [LinesSegment] {
@@ -54,7 +54,7 @@ extension LinesSegmentCollection: AnyCollectionWrapping {
     }
     
     /// Collection of `LinesSegment` values contained herein.
-    public var collection: AnyCollection<LinesSegment> {
-        return AnyCollection(linesSegments)
+    public var base: [LinesSegment] {
+        return linesSegments
     }
 }
