@@ -17,7 +17,7 @@ class AxisViewTests: XCTestCase {
     struct ClefView: VerticalAxisView {
         
         /// `StyledPath.Composite`-representation of `Renderable`-conforming type.
-        var rendered: StyledPath.Composite {
+        var rendered: Composite {
             fatalError()
         }
 

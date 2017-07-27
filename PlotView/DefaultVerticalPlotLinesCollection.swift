@@ -18,8 +18,8 @@ public struct DefaultVerticalPlotLinesCollection: Renderable {
         public let lineWidth: Double
     }
     
-    public var rendered: StyledPath.Composite {
-        return .leaf(boundaryLines)
+    public var rendered: Composite {
+        return .leaf(.path(boundaryLines))
     }
     
     public let lineSegments: LinesSegmentCollection

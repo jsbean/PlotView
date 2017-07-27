@@ -62,7 +62,7 @@ extension DefaultVerticalAxisView: Renderable {
         return Rectangle(x: 0, y: -extenderLength, width: 0, height: height)
     }
     
-    public var rendered: StyledPath.Composite {
-        return .leaf(line)
+    public var rendered: Composite {
+        return .leaf(.path(line))
     }
 }

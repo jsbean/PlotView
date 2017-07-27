@@ -46,12 +46,12 @@ public struct DefaultVerticalPointView {
 
 extension DefaultVerticalPointView: Renderable {
     
-    public var rendered: StyledPath.Composite {
+    public var rendered: Composite {
         
         // TODO: Add configuration
         let path = Path.circle(center: position, radius: 3)
         let styledPath = StyledPath(path: path)
-        return .leaf(styledPath)
+        return .leaf(.path(styledPath))
     }
 }
 
