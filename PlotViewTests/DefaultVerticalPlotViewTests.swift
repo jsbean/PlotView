@@ -7,13 +7,14 @@
 //
 
 import XCTest
+import GraphicsTestTools
 import GeometryTools
 import PathTools
 import GraphicsTools
 import PlotModel
 import PlotView
 
-class DefaultVerticalPlotViewTests: XCTestCase {
+class DefaultVerticalPlotViewTests: GraphicsTestCase {
     
     func testBuilder() {
         
@@ -30,7 +31,7 @@ class DefaultVerticalPlotViewTests: XCTestCase {
         let plot = builder.build()
         let layer = CALayer(plot.rendered)
         layer.frame = CGRect(x: 0, y: 0, width: 300, height: 50)
-        layer.renderToPDF(name: "default_vertical_plot")
+        render(layer, name: "default_vertical_plot")
     }
     
     func testWithModel() {
@@ -55,6 +56,6 @@ class DefaultVerticalPlotViewTests: XCTestCase {
         let view = DefaultVerticalPlotView(model: model, configuration: configuration)
         let layer = CALayer(view.rendered)
         layer.frame = CGRect(x: 0, y: 0, width: 425, height: 50)
-        layer.renderToPDF(name: "default_vertical_plot_from_model")
+        render(layer, name: "default_vertical_plot_from_model")
     }
 }

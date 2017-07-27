@@ -7,12 +7,13 @@
 //
 
 import XCTest
+import GraphicsTestTools
 import GeometryTools
 import PathTools
 import GraphicsTools
 import PlotView
 
-class DefaultVerticalAxisViewTests: XCTestCase {
+class DefaultVerticalAxisViewTests: GraphicsTestCase {
     
     func testVerticalAxisView() {
         let configuration = DefaultVerticalAxisConfiguration(color: .red)
@@ -20,6 +21,6 @@ class DefaultVerticalAxisViewTests: XCTestCase {
         let axis = DefaultVerticalAxisView(position: position, configuration: configuration)
         let layer = CALayer(axis.rendered)
         layer.frame = CGRect(x: 0, y: 0, width: 0, height: 40)
-        layer.renderToPDF(name: "default_vertical_axis")
+        render(layer, name: "default_vertical_axis")
     }
 }
