@@ -45,6 +45,8 @@
 		07731EBE1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EBC1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift */; };
 		07731EC31F06798F00BDDCD6 /* DefaultVerticalPlotModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EC21F06798F00BDDCD6 /* DefaultVerticalPlotModelTests.swift */; };
 		07731EC41F06798F00BDDCD6 /* DefaultVerticalPlotModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07731EC21F06798F00BDDCD6 /* DefaultVerticalPlotModelTests.swift */; };
+		079D602A1F2A3CD200AC83A5 /* GraphicsTestTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D60291F2A3CD200AC83A5 /* GraphicsTestTools.framework */; };
+		079D602C1F2A3CDE00AC83A5 /* GraphicsTestTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D602B1F2A3CDE00AC83A5 /* GraphicsTestTools.framework */; };
 		07E2B48C1F02A472007D3F02 /* PlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */; };
 		07E2B48D1F02A472007D3F02 /* PlotViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */; };
 		07E8F21C1F02615000493E47 /* VerticalPlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E8F21B1F02615000493E47 /* VerticalPlotView.swift */; };
@@ -95,6 +97,8 @@
 		07731EB91F066FFC00BDDCD6 /* DefaultVerticalPlotViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotViewTests.swift; path = PlotViewTests/DefaultVerticalPlotViewTests.swift; sourceTree = "<group>"; };
 		07731EBC1F0670F200BDDCD6 /* DefaultVerticalPlotView.Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotView.Builder.swift; path = PlotView/DefaultVerticalPlotView.Builder.swift; sourceTree = "<group>"; };
 		07731EC21F06798F00BDDCD6 /* DefaultVerticalPlotModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultVerticalPlotModelTests.swift; path = PlotViewTests/DefaultVerticalPlotModelTests.swift; sourceTree = "<group>"; };
+		079D60291F2A3CD200AC83A5 /* GraphicsTestTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsTestTools.framework; path = Carthage/Build/iOS/GraphicsTestTools.framework; sourceTree = "<group>"; };
+		079D602B1F2A3CDE00AC83A5 /* GraphicsTestTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GraphicsTestTools.framework; path = Carthage/Build/Mac/GraphicsTestTools.framework; sourceTree = "<group>"; };
 		07E2B48B1F02A472007D3F02 /* PlotViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlotViewTests.swift; path = PlotViewTests/PlotViewTests.swift; sourceTree = "<group>"; };
 		07E8F21B1F02615000493E47 /* VerticalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalPlotView.swift; path = PlotView/VerticalPlotView.swift; sourceTree = "<group>"; };
 		07E8F21E1F02621300493E47 /* HorizontalPlotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HorizontalPlotView.swift; path = PlotView/HorizontalPlotView.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			files = (
 				A567B27D4C285AC5FB707044 /* Cocoa.framework in Frameworks */,
 				07731EA21F06651500BDDCD6 /* PlotView.framework in Frameworks */,
+				079D602C1F2A3CDE00AC83A5 /* GraphicsTestTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +138,7 @@
 			files = (
 				31AD766E26BAD2089AB4B4B9 /* Foundation.framework in Frameworks */,
 				07731EA11F06651000BDDCD6 /* PlotView.framework in Frameworks */,
+				079D602A1F2A3CD200AC83A5 /* GraphicsTestTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +185,8 @@
 		2EA3F157F7C67C39C07CF846 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				079D602B1F2A3CDE00AC83A5 /* GraphicsTestTools.framework */,
+				079D60291F2A3CD200AC83A5 /* GraphicsTestTools.framework */,
 				DFD11E8B171E154EA012DFB4 /* iOS */,
 				74D47FC032754A7CB74BE3F0 /* OS X */,
 			);
@@ -528,7 +536,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PlotViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(SRCROOT)/Carthage/Build/Mac";
@@ -727,7 +738,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/Mac";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PlotViewTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(SRCROOT)/Carthage/Build/Mac";
@@ -780,7 +794,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PlotViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
@@ -800,7 +817,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = PlotViewTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
